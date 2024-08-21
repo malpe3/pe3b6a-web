@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class = "header">
+        <img src="резьба.jpg" class="head_img">
+        <h1 class="head_text">Резьба</h1>
+        <h1 class="text" id="countdown"></h1>
+    </header>
+    <script>
+        // Определение даты отсчета
+        countdownDate = new Date("2024-08-14T12:00:00").getTime();
+        
+        // Запуск таймера
+        x = setInterval(function() {
+            // Вычисление оставшегося времени
+            now = new Date().getTime();
+            distance = countdownDate - now;
+        
+            // Расчет дней, часов, минут и секунд
+            days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            // Проверка на окончание отсчета
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Событие наступило!";
+            } else {
+                // Возврат оставшегося времени
+                document.getElementById("countdown").innerHTML = 
+                    days + "д " + hours + "ч " + minutes + "м " + seconds + "с ";
+            }
+        }, 1000);
+    </script>
+    <main style="width: 100vw; height: 80vh;">
+        <script src="script.js"></script>
+    </main>
+
+    <main style="width: 100vw; height: 80vh;">
+        <input type="file" accept="video/*"/>
+        <video class = "video", controls>
+            <source src="0801(1).mp4" type="video/mp4">
+        </video>
+    </main>
+
+</body>
+</html>
