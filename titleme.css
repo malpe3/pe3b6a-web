@@ -1,0 +1,26 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    font-family: "Caveat", cursive;
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    height: 10vh;
+    align-items: center;
+    border-radius: 5px;
+    border: #fff;
+    border-bottom: 10px;
+    white-space: nowrap; /* Запрет переноса текста */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.3s; /* Плавный переход */
+}
+
+.tooltip:hover::after {
+    opacity: 1; /* Показываем подсказку при наведении */
+}

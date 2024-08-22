@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    background: #000000;
+}
+
+main{
+    padding-top: 10vh;
+}
+
+#header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;   
+    height: 10vh;
+    width: 100%;
+    color: white;
+    align-items: center;
+    background-color: #000000;
+}
+#countdown {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 700px) {
+.cards-wrapper {
+    grid-template-columns: 1fr;
+}
+.hide{
+    display:block;
+}
+}
+
+@media screen and (max-width: 500px) {
+.cards-wrapper {
+    padding: 4rem 2rem;
+}
+.card {
+    max-width: calc(100vw - 4rem);
+}
+}
+
+@media screen and (max-width: 450px) {
+.card h1{
+    font-size: 1em;
+}
+.card p{
+    font-size: 0.5em;
+}
+}

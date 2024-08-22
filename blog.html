@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog_style.css">
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="titleme.css">
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="tooltip" data-title="есть версии кто это?">
+        <img src="резьба.jpg" alt="есть версии что это?" style="width: 8vh; height: 8vh;">
+        </div>
+        <h1 class="tooltip" data-title="хм, как вам название? придумаем новое?">Резьба</h1>
+        <div id="countdown">считаю...</div>
+        <script src="count_down.js"></script>
+    </div>
+<main>
+    <section id ="image-container">
+        <img class="image active" src="images\A4 - 0.png" alt="Изображение 1">
+        <img class="image" src="images\A4 - 1.png" alt="Изображение 2">
+        <img class="image" src="images\A4 - 2.png" alt="Изображение 3">
+        <img class="image" src="images\A4 - 3.png" alt="Изображение 4">
+        <img class="image" src="images\A4 - 4.png" alt="Изображение 5">
+        <img class="image" src="images\A4 - 5.png" alt="Изображение 6">
+        <img class="image" src="images\A4 - 6.png" alt="Изображение 7">
+        <img class="image" src="images\A4 - 7.png" alt="Изображение 8">
+        <img class="image" src="images\A4 - 8.png" alt="Изображение 9">
+        <img class="image" src="images\A4 - 9.png" alt="Изображение 10">
+    </section>
+    <div style="display: flex; justify-content: space-around;">
+        <button class="button" id="prevBtn"><span>Предыдущее</span></button>
+        <button class="button" id="nextBtn"><span>Следующее</span></button>
+    </div>
+    <script src="slider.js" type="module"></script>
+
+    <section class="cards-wrapper">
+    <div class="card-grid-space">
+        <a class="card" href="https://avatars.mds.yandex.net/i?id=a9519606f94a237523567939c15d63211222ec73-5233431-images-thumbs&n=13" style="--bg-img: url(images/image0.jpg)">
+        <div>
+            <h1>зовут НИКТО</h1>
+            <p>Хочешь попробовать начать с начала? Сочтут ли тебя достойным незная кто ты? Сможешь не выдать себя?!</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="card-grid-space">
+        <a class="card" href="https://avatars.mds.yandex.net/i?id=a9519606f94a237523567939c15d63211222ec73-5233431-images-thumbs&n=13" style="--bg-img: url(images/image1.jpg)">
+        <div>
+            <h1>Фишка..</h1>
+            <p>Без предвзятостей, без задней мысли нарекаю тебя... ЧЕЛДОБРЕК1 Но не беспокойся ники будут меняться каждую неделю, так что проблем возникнуть не должно...</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="card-grid-space">
+        <a class="card" href="https://avatars.mds.yandex.net/i?id=a9519606f94a237523567939c15d63211222ec73-5233431-images-thumbs&n=13" style="--bg-img: url(images/image2.jpg)">
+        <div>
+            <h1>Hubbub народа!</h1>
+            <p>Не любишь статистику? Не фартануло на уроке? Забудь о лотереях... Надругаемся над сбором данных выбором стикера дня!\nи не только...</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="card-grid-space">
+        <a class="card" href="https://avatars.mds.yandex.net/i?id=a9519606f94a237523567939c15d63211222ec73-5233431-images-thumbs&n=13" style="--bg-img: url(images/image3.jpg)">
+        <div>
+            <h1>Скучно!</h1>
+            <p>Стой! Что скажешь о своей школьной жизни? Будет о чем вспомнить? Я здесь новичок, но мне кажется...</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="card-grid-space">
+        <a class="card" href="https://avatars.mds.yandex.net/i?id=a9519606f94a237523567939c15d63211222ec73-5233431-images-thumbs&n=13" style="--bg-img: url(images/image4.jpg)">
+        <div>
+            <h1>Капот</h1>
+            <p>..в моих руках, а я рода человек слышащий и готов поддержать все что вы сможете вообразить! :)</p>
+        </div>
+        </a>
+    </div>
+
+</section>
+
+
+</main>
+</body>
+</html>
