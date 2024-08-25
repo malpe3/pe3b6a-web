@@ -1,0 +1,26 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: attr(data-title);
+    position: absolute;
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%); /* Центрирование текста */
+    color: #fff; /* Цвет текста */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.3s; /* Плавный переход */
+    z-index: 10; /* Убедитесь, что подсказка выше других элементов */
+}
+
+.tooltip:hover::after {
+    opacity: 1; /* Показываем подсказку при наведении */
+}
+
+.smltxt{
+    font-size: 2px;
+}
